@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "783624603576",
+    "firebase_url": "https://boarding-app-3a8e7.firebaseio.com",
+    "project_id": "boarding-app-3a8e7",
+    "storage_bucket": "boarding-app-3a8e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783624603576:android:d70a6dff34ea9357",
+        "android_client_info": {
+          "package_name": "com.creativewebs.boardima"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783624603576-c0jvn0ovg03vdaag543ac7n5huv0tfm8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.creativewebs.boardima",
+            "certificate_hash": "eac54f4bb485ee7be2629d0dc7b0939a94dfa5aa"
+          }
+        },
+        {
+          "client_id": "783624603576-3imeorjoco0dj11lb0ut0brlhru3fhvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD48lFhFL9dH3ozSrTHPhMfV_cMFQtwRkM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783624603576-3imeorjoco0dj11lb0ut0brlhru3fhvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

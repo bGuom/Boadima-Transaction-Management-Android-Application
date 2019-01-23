@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.creativewebs.boardima">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.name.name.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/boardima"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/boardima"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Members.NewMemberActivity" />
+        <activity android:name=".Transaction.NewTransactionActivity" />
+        <activity android:name=".Payments.PaymentsActivity" />
+        <activity android:name=".Members.UpdateMemberActivity" />
+        <activity android:name=".Members.AccountActivity" />
+        <activity android:name=".Transaction.TransactionActivity" />
+        <activity android:name=".Members.MembersActivity" />
+        <activity
+            android:name=".Members.DeleteMembersActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".Members.AddMembersActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".Members.RemoveMembersActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".Payments.RemovePaymentActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".Payments.NewPaymentActivity" />
+        <activity android:name=".Services.SendNotificationActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notif"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryDark"/>
+
+
+    </application>
+
+
+
+
+</manifest>

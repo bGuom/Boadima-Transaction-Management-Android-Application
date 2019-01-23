@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:padding="4dp"
+    android:background="@drawable/frame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/ivpay"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitCenter" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvpayname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#4277bc" />
+
+            <TextView
+                android:id="@+id/tvpayval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvpaydate"
+                android:layout_alignBottom="@+id/tvpaydate"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:text="RS"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvpaydate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvpayname"
+                android:text="Date"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#96b1ba" />
+
+            <TextView
+                android:id="@+id/tvpaytotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvpaydate"
+                android:text="Total Outstanding"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#28b47f" />
+
+            <Button
+                android:id="@+id/btnoti"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvpaytotal"
+                android:background="@drawable/shadow"
+                android:elevation="2dp"
+                android:onClick="myClickHandler2"
+                android:text="Send Notification"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

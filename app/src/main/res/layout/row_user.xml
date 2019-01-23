@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:padding="4dp"
+    android:background="@drawable/frame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivphoto"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitCenter" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvpayname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#4277bc" />
+
+            <TextView
+                android:id="@+id/tvpaydate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#96b1ba" />
+
+            <TextView
+                android:id="@+id/tvpaytotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BDay"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#28b47f" />
+
+            <Button
+                android:id="@+id/btinfo"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shadow"
+
+                android:elevation="2dp"
+                android:onClick="myClickHandler2"
+                android:text="Show info"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="16dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:padding="6dp"
+                android:src="@drawable/pay" />
+
+            <EditText
+                android:id="@+id/etpname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/edittext"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Payment Name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColorHint="#fe1994ae" />
+
+            <TextView
+                android:id="@+id/tvp1eerr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:text="  "
+                android:textColor="#fef77a6d"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etpval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/edittext"
+                android:drawablePadding="16dp"
+
+                android:ems="10"
+                android:hint="Amount"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColorHint="#fe1994ae" />
+
+            <TextView
+                android:id="@+id/tvp2err"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:text="  "
+                android:textColor="#fef77a6d"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edittext"
+                android:drawablePadding="16dp"
+
+                android:ems="10"
+                android:hint="Day of the month"
+                android:inputType="date"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColorHint="#fe1994ae" />
+
+
+
+            <TextView
+                android:id="@+id/tvp3err"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:text="  "
+                android:textColor="#fef77a6d"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etptotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edittext"
+                android:drawablePadding="16dp"
+
+                android:ems="10"
+                android:hint="Outstanding"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColorHint="#fe1994ae" />
+
+            <TextView
+                android:id="@+id/tvp4err"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.07"
+                android:text="  "
+                android:textColor="#fef77a6d"
+                android:textSize="12sp" />
+
+
+
+                <ListView
+                    android:id="@+id/list_payer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@android:color/transparent"
+                    android:scrollbars="vertical" />
+
+
+
+            <Button
+                android:id="@+id/baddmem"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shadow"
+                android:clickable="true"
+                android:padding="16dp"
+                android:text="Add Member"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/bcreatepay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shadow"
+                android:clickable="true"
+                android:padding="16dp"
+                android:text="Create Payment"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
