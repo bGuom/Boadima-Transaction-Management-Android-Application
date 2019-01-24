@@ -27,4 +27,12 @@ User can logout from the APP
 
 ## JSON API.
 
-This app is working with JSON API and use MySQL database which is hosted online. 
+This app is working with JSON API and use MySQL database which is hosted online.
+
+## Screen Shots
+
+<img src="https://github.com/bGuom/Boadima-Transaction-Management-Android-Application/blob/master/Screen_Shots/1.jpg" width="240">  <img src="https://github.com/bGuom/Boadima-Transaction-Management-Android-Application/blob/master/Screen_Shots/2.jpg" width="240">
+<img src="https://github.com/bGuom/Boadima-Transaction-Management-Android-Application/blob/master/Screen_Shots/3.jpg" width="240">  <img src="https://github.com/bGuom/Boadima-Transaction-Management-Android-Application/blob/master/Screen_Shots/4.jpg" width="240">
+<img src="https://github.com/bGuom/Boadima-Transaction-Management-Android-Application/blob/master/Screen_Shots/5.jpg" width="240">  <img src="https://github.com/bGuom/Boadima-Transaction-Management-Android-Application/blob/master/Screen_Shots/6.jpg" width="240">
+<img src="https://github.com/bGuom/Boadima-Transaction-Management-Android-Application/blob/master/Screen_Shots/7.jpg" width="240">
+
